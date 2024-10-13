@@ -1,15 +1,20 @@
 import discord
+from discord.ext import commands
 
-# intents em all
+# intents em default
 intents = discord.Intents.all()
 
-# client intents
-client = discord.Client(intents=intents)
+bot = commands.Bot(command_prefix='?', intents=intents)
 
-# evento bot
-@client.event
+# resposta do bot
+@bot.event
 async def on_ready():
-    print(f'Logado como {client.user}')
+    print(f'Logado como {bot.user}')
+
+# comando prefix
+@bot.command()
+async def ping(ctx):
+    await ctx.send(f"pong")
 
 # Token do bot
 client.run('TOKEN')
