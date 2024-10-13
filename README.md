@@ -1,2 +1,2 @@
 # discordbot
-Um bot de discord com funções de musica ticket e outros...
+Um bot de discord 
