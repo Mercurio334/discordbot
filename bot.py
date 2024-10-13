@@ -1,7 +1,7 @@
 import discord
 
-# intents em default
-intents = discord.Intents.default()
+# intents em all
+intents = discord.Intents.all()
 
 # client intents
 client = discord.Client(intents=intents)
