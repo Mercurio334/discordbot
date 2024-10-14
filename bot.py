@@ -6,7 +6,7 @@ intents = discord.Intents.all()
 
 bot = commands.Bot(command_prefix='?', intents=intents)
 
-# resposta do bot
+# event
 @bot.event
 async def on_ready():
     print(f'Logado como {bot.user}')
